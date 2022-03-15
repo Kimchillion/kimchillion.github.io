@@ -97,18 +97,19 @@ This is the original draft.
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height:25%;
-    left:100%;
+    left:94%;
+    top:0;
     position:absolute;
     width:10%;
 }
-.tab_main_r::after{
+/* .tab_main_r::after{
     position:absolute;
     content:"Home";
     text-align: center;
     top: 30%;
     right:0;
     transform: rotate(90deg);
-}
+} */
 
 .tab_main_l{
     /* background-color: #cec577; */
@@ -122,13 +123,13 @@ This is the original draft.
     width:5%;
 }
 
-.tab_main_l::after{
+/* .tab_main_l::after{
     position:absolute;
     content:"Home";
     text-align: center;
     top: 30%;
     transform: rotate(-90deg);
-}
+} */
 .tab_about{
     /* background-color: var(--boston-blue); */
     background-color: #2a86d5;
@@ -136,6 +137,7 @@ This is the original draft.
     border-bottom-right-radius: 20px;
     height:20%;
     left:95%;
+    margin:auto;
     position:absolute;
     top:28%;
     width:10%;
@@ -150,6 +152,7 @@ This is the original draft.
 }
 
 .tab_project{
+    margin:auto;
     background-color: var(--conifer);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -157,7 +160,7 @@ This is the original draft.
     left:97%;
     position:absolute;
     top:52%;
-    width:11%;
+    width:13%;
 }
 .tab_project::after{
     position:absolute;
