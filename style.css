@@ -150,7 +150,26 @@ This is the original draft.
     right:-40%;
     transform: rotate(90deg);
 }
-
+.tab_about_l{
+    /* background-color: var(--boston-blue); */
+    background-color: #2a86d5;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:20%;
+    left:-5%;
+    margin:auto;
+    position:absolute;
+    top:28%;
+    width:10%;
+}
+.tab_about_l::after{
+    position:absolute;
+    content:"About";
+    text-align: center;
+    top: 30%;
+    right:-40%;
+    transform: rotate(90deg);
+}
 .tab_project{
     margin:auto;
     background-color: var(--conifer);
@@ -163,6 +182,26 @@ This is the original draft.
     width:13%;
 }
 .tab_project::after{
+    position:absolute;
+    content:"Projects";
+    text-align: center;
+    top: 30%;
+    right:-40%;
+    transform: rotate(90deg);
+}
+
+.tab_project_l{
+    margin:auto;
+    background-color: var(--conifer);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:20%;
+    left:-7%;
+    position:absolute;
+    top:52%;
+    width:13%;
+}
+.tab_project_l::after{
     position:absolute;
     content:"Projects";
     text-align: center;
