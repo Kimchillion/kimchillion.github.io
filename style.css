@@ -57,9 +57,17 @@
     font-style: normal;
   }
 
+.header{
+    background-color: white;
+    height:10%;
+    position:fixed;
+    width:100%;
+    top:0px
+}
 
 .page_background{
-    background-color: #4b4646;
+    /* background-color: #4b4646; */
+    background-color: black;
     height: 1000%;
     left:0px;
     position: absolute;
@@ -83,44 +91,61 @@ This is the original draft.
     width: 90%;
 } */
 
-.tab_main{
+.tab_main_r{
     /* background-color: #cec577; */
     background-color: #f1d592;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     height:25%;
-    right:-8%;
+    left:100%;
     position:absolute;
-    top:-1.6%;
     width:10%;
 }
-.tab_main::after{
+.tab_main_r::after{
     position:absolute;
     content:"Home";
     text-align: center;
     top: 30%;
-    right:-40%;
+    right:0;
     transform: rotate(90deg);
 }
 
+.tab_main_l{
+    /* background-color: #cec577; */
+    background-color: #f1d592;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height:25%;
+    left:-5%;
+    position:absolute;
+    top:0;
+    width:5%;
+}
+
+.tab_main_l::after{
+    position:absolute;
+    content:"Home";
+    text-align: center;
+    top: 30%;
+    transform: rotate(-90deg);
+}
 .tab_about{
-    background-color: var(--boston-blue);
+    /* background-color: var(--boston-blue); */
+    background-color: #2a86d5;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height:20%;
-    right:-10%;
+    left:95%;
     position:absolute;
-    top:25%;
-    width:8%;
+    top:28%;
+    width:10%;
 }
 .tab_about::after{
     position:absolute;
     content:"About";
     text-align: center;
     top: 30%;
-    right:-60%;
+    right:-40%;
     transform: rotate(90deg);
 }
 
@@ -129,66 +154,90 @@ This is the original draft.
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height:20%;
-    right:-12%;
+    left:97%;
     position:absolute;
-    top:48%;
-    width:10%;
+    top:52%;
+    width:11%;
 }
 .tab_project::after{
     position:absolute;
     content:"Projects";
     text-align: center;
     top: 30%;
-    right:-50%;
+    right:-40%;
     transform: rotate(90deg);
 }
 
 .tab_contact{
-    background-color: grey;
+    background-color: red;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height:20%;
-    right:-11%;
+    left:96%;
     position:absolute;
-    top:73%;
-    width:9%;
+    top:74%;
+    width:10%;
 }
 .tab_contact::after{
     position:absolute;
     content:"Contact";
     top: 30%;
-    right:-60%;
+    right:-40%;
     transform: rotate(90deg);
 }
 
 .main_page{
     background-color: #f1d592;
-    border: 15px #f1d592;
-    border-style: solid solid solid none;
+    /* background-color: blueviolet; */
+    border: 15px white;
+    border-style: none solid none none;
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    position: relative;
+    width: 95%;
+}
+
+.closed_folder{
+    background-color: #f1d592;
+    border-style: none solid none none;
     border-bottom-right-radius: 44px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     height: 92%;
     right: 10%;
     position: absolute;
-    top: 5%;
+    top: 10%;
     width: 45%;
+}
+
+.open_folder{
+    background-color: #f1d592;
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border-bottom-left-radius: 44px;
+    height: 92%;
+    right: 10%;
+    position: absolute;
+    top: var(--top);
+    width: 85%;
 }
 
 .content_page{
     background-color: #EFEEDD;
-    outline:15.5px var(#cec577);
-    outline-style: solid solid solid;
-    border: 18px var(black);
-    border-style: solid solid solid none;
-    border-top-right-radius: 44px;
-    border-bottom-right-radius: 44px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    height: 95%;
-    right: 15%;
+    /* outline:50px var(#f1d592); */
+    /* outline-style: solid solid solid none; */
+    border: 25px var(--bg_color);
+    border-style: solid solid solid solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    height: 85%;
+    left:5%;
     position: absolute;
-    top: 18px;
+    top: 5%;
     width: 90%;
 
 }
