@@ -1,0 +1,230 @@
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+    --boston-blue: 
+  rgba(67, 150, 196, 1);
+    --tundora: 
+  rgba(75, 70, 70, 1);
+    --shakespeare: 
+  rgba(77, 180, 202, 1);
+    --conifer: 
+  rgba(176, 218, 55, 1);
+    --mahogany: 
+  rgba(202, 77, 77, 1);
+    --fuchsia-pink: 
+  rgba(202, 77, 190, 1);
+    --tacha: 
+  rgba(206, 197, 119, 1);
+    --white: 
+  rgba(255, 255, 255, 1);
+  
+    --font-size-m: 48px;
+    --font-size-l: 64px;
+  
+    --font-family-reem_kufi: "Reem Kufi";
+  }
+  
+  
+  
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi:400");
+
+  .reemkufi-normal-black-48px {
+    color: var(--black);
+    font-family: var(--font-family-reem_kufi);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .reemkufi-normal-white-48px {
+    color: var(--white);
+    font-family: var(--font-family-reem_kufi);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .reemkufi-normal-black-64px {
+    color: var(--black);
+    font-family: var(--font-family-reem_kufi);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .reemkufi-normal-red-64px {
+    color: var(--mahogany);
+    font-family: var(--font-family-reem_kufi);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.page_background{
+    background-color: #4b4646;
+    height: 1000%;
+    left:0px;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+/* 
+This is the original draft.
+.main_page{
+    background-color: #cec577;
+    border: 15.5px var(--mahogany);
+    border-style: solid none solid solid;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 95%;
+    left: 140px;
+    position: absolute;
+    top: 18px;
+    width: 90%;
+} */
+
+.tab_main{
+    /* background-color: #cec577; */
+    background-color: #f1d592;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height:25%;
+    right:-8%;
+    position:absolute;
+    top:-1.6%;
+    width:10%;
+}
+.tab_main::after{
+    position:absolute;
+    content:"Home";
+    text-align: center;
+    top: 30%;
+    right:-40%;
+    transform: rotate(90deg);
+}
+
+.tab_about{
+    background-color: var(--boston-blue);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:20%;
+    right:-10%;
+    position:absolute;
+    top:25%;
+    width:8%;
+}
+.tab_about::after{
+    position:absolute;
+    content:"About";
+    text-align: center;
+    top: 30%;
+    right:-60%;
+    transform: rotate(90deg);
+}
+
+.tab_project{
+    background-color: var(--conifer);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:20%;
+    right:-12%;
+    position:absolute;
+    top:48%;
+    width:10%;
+}
+.tab_project::after{
+    position:absolute;
+    content:"Projects";
+    text-align: center;
+    top: 30%;
+    right:-50%;
+    transform: rotate(90deg);
+}
+
+.tab_contact{
+    background-color: grey;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:20%;
+    right:-11%;
+    position:absolute;
+    top:73%;
+    width:9%;
+}
+.tab_contact::after{
+    position:absolute;
+    content:"Contact";
+    top: 30%;
+    right:-60%;
+    transform: rotate(90deg);
+}
+
+.main_page{
+    background-color: #f1d592;
+    border: 15px #f1d592;
+    border-style: solid solid solid none;
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 92%;
+    right: 10%;
+    position: absolute;
+    top: 5%;
+    width: 45%;
+}
+
+.content_page{
+    background-color: #EFEEDD;
+    outline:15.5px var(#cec577);
+    outline-style: solid solid solid;
+    border: 18px var(black);
+    border-style: solid solid solid none;
+    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 95%;
+    right: 15%;
+    position: absolute;
+    top: 18px;
+    width: 90%;
+
+}
+
+.classified{
+    left:51%;
+    position:absolute;
+    /* text-align: center; */
+    top: 8%;
+    transform: rotate(40deg);
+    border-width: 3px;
+    border-style: groove;
+    border-color: red;
+}
+
+.classified::before{
+    content: "CLASSIFIED";
+}
+
+.programme-extraordinaire-garett-bare {
+  left: 5%;
+  letter-spacing: 0;
+  line-height: 150%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  /* width: 50%; */
+}
+
+.programme-extraordinaire-garett-bare::before{    
+  content: "Programme Extraordinaire\A\AGarett Bare";
+}
+
+
+
+
+
+
+
