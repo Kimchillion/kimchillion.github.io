@@ -57,8 +57,8 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--conifer);
-  height:15%;
-  right:-15%;
+  height:12%;
+  right:-13%;
   position:absolute;
   top:52%;
   width:23%;
@@ -74,7 +74,7 @@ html {
   position:absolute;
   top:52%;
   width:23%;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .contact_tab{
@@ -97,7 +97,7 @@ html {
   position:absolute;
   top:74%;
   width:20%;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 
@@ -189,16 +189,25 @@ html {
 .main_page{
     background-color: #f1d592;
     /* background-color: blueviolet; */
-    border: 15px white;
-    border-style: none solid none none;
     border-bottom-right-radius: 44px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     height: 100%;
-    position: relative;
+    position: absolute;
     width: 95%;
 }
 
+.fake_page{    
+  background-color: white;
+  border: 15px var(--bg_color);
+  border-style: none solid none none;
+  border-bottom-right-radius: 44px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+  position: absolute;
+  width: var(--width);
+}
 .closed_folder{
     background-color: #ac9767;
     /* background-color: magenta; */
@@ -268,7 +277,7 @@ html {
 }
 
 .programme-extraordinaire-garett-bare {
-  left: 7%;
+  left:15%;
   letter-spacing: 0;
   line-height: 150%;
   position: absolute;
