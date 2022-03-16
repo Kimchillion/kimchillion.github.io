@@ -1,6 +1,105 @@
-a {
-    
+/* a.anchor {
+  display: block;
+  position: relative;
+  top: 10%;
+  visibility: hidden;
+} */
+html {
+  scroll-padding-top: 10%; /* height of sticky header */
 }
+.home_tab {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #f1d592;
+  height:13%;
+  right:-12%;
+  position:absolute;
+  top:0%;
+  width:25%;
+  transform: rotate(90deg);
+}
+
+.home_tab_flipped {
+  border-top-right-radius: 20px;
+  background-color: #f1d592;
+  height:10%;
+  left:-10%;
+  position:absolute;
+  top:6.7%;
+  width:15%;
+  transform: rotate(90deg);
+}
+
+.about_tab{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #2a86d5;
+  height:10%;
+  right:-10%;
+  position:absolute;
+  top:25%;
+  width:20%;
+  transform: rotate(90deg);
+}
+.about_tab_flipped{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #2a86d5;
+  height:10%;
+  left:-10%;
+  position:absolute;
+  top:20%;
+  width:20%;
+  transform: rotate(-90deg);
+}
+
+.project_tab{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: var(--conifer);
+  height:15%;
+  right:-15%;
+  position:absolute;
+  top:52%;
+  width:23%;
+  transform: rotate(90deg);
+}
+
+.project_tab_flipped{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: var(--conifer);
+  height:15%;
+  left:-10%;
+  position:absolute;
+  top:52%;
+  width:23%;
+  transform: rotate(90deg);
+}
+
+.contact_tab{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: red;
+  height:10%;
+  right:-10%;
+  position:absolute;
+  top:74%;
+  width:20%;
+  transform: rotate(90deg);
+}
+.contact_tab_flipped{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: red;
+  height:10%;
+  left:-10%;
+  position:absolute;
+  top:74%;
+  width:20%;
+  transform: rotate(90deg);
+}
+
 
 
 :root {
@@ -70,6 +169,11 @@ a {
     top:0px
 }
 
+.header_info{
+  right: 5%;
+  position:absolute;
+  top:0;
+}
 .page_background{
     /* background-color: #4b4646; */
     background-color: black;
@@ -79,159 +183,8 @@ a {
     top:0;
     width:100%;
 }
-/* 
-This is the original draft.
-.main_page{
-    background-color: #cec577;
-    border: 15.5px var(--mahogany);
-    border-style: solid none solid solid;
-    border-top-left-radius: 44px;
-    border-bottom-left-radius: 44px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 95%;
-    left: 140px;
-    position: absolute;
-    top: 18px;
-    width: 90%;
-} */
 
-.tab_main_r{
-    /* background-color: #cec577; */
-    background-color: #f1d592;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:25%;
-    left:94%;
-    top:0;
-    position:absolute;
-    width:10%;
-}
-/* .tab_main_r::after{
-    position:absolute;
-    content:"Home";
-    text-align: center;
-    top: 30%;
-    right:0;
-    transform: rotate(90deg);
-} */
 
-.tab_main_l{
-    /* background-color: #cec577; */
-    background-color: #f1d592;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height:25%;
-    left:-5%;
-    position:absolute;
-    top:0;
-    width:5%;
-}
-
-/* .tab_main_l::after{
-    position:absolute;
-    content:"Home";
-    text-align: center;
-    top: 30%;
-    transform: rotate(-90deg);
-} */
-.tab_about{
-    /* background-color: var(--boston-blue); */
-    background-color: #2a86d5;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:20%;
-    left:95%;
-    margin:auto;
-    position:absolute;
-    top:28%;
-    width:10%;
-}
-.tab_about::after{
-    position:absolute;
-    content:"About";
-    text-align: center;
-    top: 30%;
-    right:-40%;
-    transform: rotate(90deg);
-}
-.tab_about_l{
-    /* background-color: var(--boston-blue); */
-    background-color: #2a86d5;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:20%;
-    left:-5%;
-    margin:auto;
-    position:absolute;
-    top:28%;
-    width:10%;
-}
-.tab_about_l::after{
-    position:absolute;
-    content:"About";
-    text-align: center;
-    top: 30%;
-    right:-40%;
-    transform: rotate(90deg);
-}
-.tab_project{
-    margin:auto;
-    background-color: var(--conifer);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:20%;
-    left:97%;
-    position:absolute;
-    top:52%;
-    width:13%;
-}
-.tab_project::after{
-    position:absolute;
-    content:"Projects";
-    text-align: center;
-    top: 30%;
-    right:-40%;
-    transform: rotate(90deg);
-}
-
-.tab_project_l{
-    margin:auto;
-    background-color: var(--conifer);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:20%;
-    left:-7%;
-    position:absolute;
-    top:52%;
-    width:13%;
-}
-.tab_project_l::after{
-    position:absolute;
-    content:"Projects";
-    text-align: center;
-    top: 30%;
-    right:-40%;
-    transform: rotate(90deg);
-}
-
-.tab_contact{
-    background-color: red;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height:20%;
-    left:96%;
-    position:absolute;
-    top:74%;
-    width:10%;
-}
-.tab_contact::after{
-    position:absolute;
-    content:"Contact";
-    top: 30%;
-    right:-40%;
-    transform: rotate(90deg);
-}
 
 .main_page{
     background-color: #f1d592;
@@ -247,7 +200,8 @@ This is the original draft.
 }
 
 .closed_folder{
-    background-color: #f1d592;
+    background-color: #ac9767;
+    /* background-color: magenta; */
     border-style: none solid none none;
     border-bottom-right-radius: 44px;
     border-top-left-radius: 5px;
@@ -257,6 +211,12 @@ This is the original draft.
     position: absolute;
     top: 10%;
     width: 45%;
+}
+
+.closed_folder_loc{
+  top: var(--top);
+  right: var(--right);
+  border-top-right-radius: 44px;
 }
 
 .open_folder{
@@ -270,6 +230,9 @@ This is the original draft.
     top: var(--top);
     width: 85%;
 }
+.location{
+  top: var(top)
+}
 
 .content_page{
     background-color: #EFEEDD;
@@ -282,7 +245,7 @@ This is the original draft.
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;  
     height: 85%;
-    left:5%;
+    left:6%;
     position: absolute;
     top: 5%;
     width: 90%;
@@ -305,7 +268,7 @@ This is the original draft.
 }
 
 .programme-extraordinaire-garett-bare {
-  left: 5%;
+  left: 7%;
   letter-spacing: 0;
   line-height: 150%;
   position: absolute;
@@ -313,10 +276,10 @@ This is the original draft.
   top: 35%;
   /* width: 50%; */
 }
-
+/* 
 .programme-extraordinaire-garett-bare::before{    
   content: "Programme Extraordinaire\A\AGarett Bare";
-}
+} */
 
 
 
