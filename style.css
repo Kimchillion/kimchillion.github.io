@@ -7,26 +7,51 @@
 html {
   scroll-padding-top: 10%; /* height of sticky header */
 }
+
+.no_top{
+  top:0;
+}
+.no_side{
+  right:0
+}
+
+.no_textdec{
+  text-decoration: none;
+}
+
+.fit_text{
+  position: static;
+}
 .home_tab {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #f1d592;
-  height:13%;
-  right:-12%;
+  height:5%;
+  right:-15%;
   position:absolute;
-  top:0%;
+  top:7.3%;
   width:25%;
   transform: rotate(90deg);
 }
+.home_tab_text{  
+  left:10%;
+  letter-spacing: 5px;
+  line-height: 150%;
+  position: absolute;
+  text-align: center;
+  top:-50%;
+  transform: rotate(-2deg);
+}
 
 .home_tab_flipped {
-  border-top-right-radius: 20px;
-  background-color: #f1d592;
-  height:10%;
-  left:-10%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #c4ac74;
+  height:5%;
+  left:-15%;
   position:absolute;
-  top:6.7%;
-  width:15%;
+  top:7.3%;
+  width:25%;
   transform: rotate(90deg);
 }
 
@@ -34,8 +59,8 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #2a86d5;
-  height:10%;
-  right:-10%;
+  height:3%;
+  right:-13%;
   position:absolute;
   top:25%;
   width:20%;
@@ -45,7 +70,7 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #2a86d5;
-  height:10%;
+  height:5%;
   left:-10%;
   position:absolute;
   top:20%;
@@ -56,33 +81,34 @@ html {
 .project_tab{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  background-color: var(--conifer);
-  height:12%;
+  background-color: red;
+  height:3%;
   right:-13%;
   position:absolute;
   top:52%;
-  width:23%;
+  width:20%;
   transform: rotate(90deg);
 }
 
 .project_tab_flipped{
   border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  background-color: var(--conifer);
-  height:15%;
-  left:-10%;
+  border-top-left-radius: 20px;  
+  background-color: red;
+
+  height:5%;
+  right:-10%;
   position:absolute;
   top:52%;
-  width:23%;
+  width:20%;
   transform: rotate(-90deg);
 }
 
 .contact_tab{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  background-color: red;
-  height:10%;
-  right:-10%;
+  background-color: var(--conifer);
+  height:3%;
+  right:-13%;
   position:absolute;
   top:74%;
   width:20%;
@@ -91,16 +117,14 @@ html {
 .contact_tab_flipped{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  background-color: red;
-  height:10%;
-  left:-10%;
+  background-color: var(--conifer);
+  height:3%;
+  left:-13%;
   position:absolute;
   top:74%;
   width:20%;
   transform: rotate(-90deg);
 }
-
-
 
 :root {
     --black: 
@@ -122,47 +146,43 @@ html {
     --white: 
   rgba(255, 255, 255, 1);
   
-    --font-size-m: 48px;
-    --font-size-l: 64px;
-  
-    --font-family-reem_kufi: "Reem Kufi";
-  }
-  
-  
-  
-@import url("https://fonts.googleapis.com/css?family=Reem+Kufi:400");
+    --font-size-m: 15%;
+    --font-size-l: 425%;
 
-  .reemkufi-normal-black-48px {
-    color: var(--black);
-    font-family: var(--font-family-reem_kufi);
-    font-size: var(--font-size-m);
+    --font-family-couriernew:"Courier New", Courier, Monospace;
+  }
+  
+.font-size-large{
+  font-size: var(--font-size-l);
+}
+.font-size-small{
+  font-size: var(--font-size-s);
+}
+.font-size-medium{
+  font-size: var(--font-size-m);
+}
+
+.font-color-black{
+  color:black;
+}
+
+.font-color-red{
+  color: var(--mahogany);
+}
+
+  .couriernew-normal{
+    font-family: "Courier New", Courier, Monospace;
     font-weight: 400;
     font-style: normal;
   }
-  .reemkufi-normal-white-48px {
-    color: var(--white);
-    font-family: var(--font-family-reem_kufi);
-    font-size: var(--font-size-m);
-    font-weight: 400;
-    font-style: normal;
-  }
-  .reemkufi-normal-black-64px {
-    color: var(--black);
-    font-family: var(--font-family-reem_kufi);
-    font-size: var(--font-size-l);
-    font-weight: 400;
-    font-style: normal;
-  }
-  .reemkufi-normal-red-64px {
-    color: var(--mahogany);
-    font-family: var(--font-family-reem_kufi);
-    font-size: var(--font-size-l);
-    font-weight: 400;
-    font-style: normal;
+  .lucidahandwriting-normal{
+    font-family:cursive;
+    font-weight:200;
+    font-style:normal;
   }
 
 .header{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.459);
     height:10%;
     position:fixed;
     width:100%;
@@ -174,17 +194,18 @@ html {
   position:absolute;
   top:0;
 }
+
 .page_background{
-    /* background-color: #4b4646; */
-    background-color: black;
-    height: 1000%;
+    height: 100%;
     left:0px;
-    position: absolute;
+    position: fixed;
     top:0;
     width:100%;
 }
 
-
+.text_align{
+    text-align: center;
+}
 
 .main_page{
     background-color: #f1d592;
@@ -197,31 +218,73 @@ html {
     width: 95%;
 }
 
-.fake_page{    
+.main_backpage{
+  background-color: #ac9767;
+  border-style: none solid none none;
+  border-bottom-right-radius: 44px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 92%;
+  right: 10%;
+  top:10%;
+  position: absolute;
+  width: 45%;
+}
+
+
+.avoid_header{
+  top:10%;
+}
+/* 95,96,98 */
+.fake_page{
   background-color: white;
-  border: 15px var(--bg_color);
   border-style: none solid none none;
   border-bottom-right-radius: 44px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   height: 100%;
   position: absolute;
-  width: var(--width);
 }
-.closed_folder{
-    background-color: #ac9767;
-    /* background-color: magenta; */
-    border-style: none solid none none;
-    border-bottom-right-radius: 44px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    height: 92%;
-    right: 10%;
-    position: absolute;
-    top: 10%;
-    width: 45%;
+.fake_page_about{
+  border: 15px #2a86d5;
+  border-style: none solid none none;
+  width:96%;
+}
+.fake_page_contact{
+  border: 15px var(--conifer);
+  border-style: none solid none none;
+  width:99%;
+}
+.fake_page_project{
+  border: 15px red;
+  border-style: none solid none none;
+  width:97%;
 }
 
+.closed_folder{
+    background-color: #c4ac74;
+    height: 100%;
+    right: 0%;
+    position: absolute;
+    width: 50%;
+}
+
+.closed_folder:nth-child(2){
+  border-bottom-right-radius: 44px;
+right: 0%;
+top: 0%;
+border-top-right-radius: 44px;
+}
+
+.closed_folder:nth-child(1){
+  border:2px #ac9767;
+  border-style: none solid none;
+  border-bottom-left-radius: 44px;
+  border-top-left-radius: 5px;
+  right: 50%;
+  top: 0%;
+
+}
 .closed_folder_loc{
   top: var(--top);
   right: var(--right);
@@ -235,54 +298,76 @@ html {
     border-bottom-left-radius: 44px;
     height: 92%;
     right: 10%;
+    top:115%;
     position: absolute;
-    top: var(--top);
     width: 85%;
 }
-.location{
-  top: var(top)
+
+.open_folder_about{
+  top:115%;
 }
+
+.open_folder_project{
+  top:230%;
+}
+
+.open_folder_contact{
+  top:345%;
+}
+
 
 .content_page{
     background-color: #EFEEDD;
     /* outline:50px var(#f1d592); */
     /* outline-style: solid solid solid none; */
-    border: 25px var(--bg_color);
-    border-style: solid solid solid solid;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;  
-    height: 85%;
-    left:6%;
+    height: 94%;
     position: absolute;
-    top: 5%;
-    width: 90%;
-
+    top: 1%;
+    width: 94%;
 }
 
+.content_page_about{
+  border: 25px #2a86d5;
+  border-style: solid solid solid solid;
+}
+.content_page_project{
+  border: 25px red;
+  border-style: solid solid solid solid;
+}
+.content_page_contact{
+  border: 25px var(--conifer);
+  border-style: solid solid solid solid;
+}
 .classified{
-    left:51%;
+    left:47%;
     position:absolute;
     /* text-align: center; */
-    top: 8%;
-    transform: rotate(40deg);
+    top: 16%;
+    transform: rotate(38deg);
     border-width: 3px;
     border-style: groove;
     border-color: red;
 }
-
+/* 
 .classified::before{
     content: "CLASSIFIED";
-}
+} */
+
 
 .programme-extraordinaire-garett-bare {
-  left:15%;
+  left:3%;
   letter-spacing: 0;
   line-height: 150%;
   position: absolute;
   text-align: center;
   top: 35%;
+  transform: rotate(-10deg);
+  border-style: groove;
+  border-color: black;
   /* width: 50%; */
 }
 /* 

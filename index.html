@@ -10,65 +10,70 @@
 </head>
 
 <body>
+    <img src="Blank.jpg" alt="Italian Trulli" class="page_background">
     <div class="page_background"></div>
-    <div class="closed_folder">
-        <div class="fake_page" style="--bg_color:red;--width:98%"></div>
-        <a href="#contact" class="contact_tab">Contact</a>
-        <div class="fake_page" style="--bg_color:var(--conifer);--width:96%"></div>
-        <a href="#project" class="project_tab">Projects</a>
-        <div class="fake_page" style="--bg_color:#2a86d5;--width:95%"></div>
-        <a href="#about" class="about_tab">About</a>
-        <!-- <div class="tab_about tab_corners tab_heights reemkufi-normal-black-48px"></div> -->
-        <!-- <div class="tab_project tab_corners tab_heights reemkufi-normal-black-48px"></div>
-        <div class="tab_contact tab_corners tab_heights reemkufi-normal-black-48px"></div> -->
-        <div class="main_page" id="cover">
-            <a href="#cover" class="home_tab"></a>
-            <h1 class="programme-extraordinaire-garett-bare reemkufi-normal-black-64px">Programme Extraordinaire<br><br>Garett Bare</h1>
-            <h2 class="classified reemkufi-normal-red-64px"></h2>
+
+    <div class="main_backpage avoid_header" id="cover">
+        <div class="fake_page fake_page_contact">
+            <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-m text_align">Contact</a>
         </div>
-        <!-- <div class="tab_main_r tab_corners reemkufi-normal-black-48px"></div> -->
-    </div>
-    <div class="closed_folder closed_folder_loc" style="--top:115%;--right:10%;">
-        <a href="#project" class="project_tab">Projects</a>
-        <a href="#contact" class="contact_tab">Contact</a>
-        <a href="#about" class="about_tab">About</a>
-    </div>
-
-    <div class="closed_folder closed_folder_loc" style="--top:115%;--right:50%;">
-        <a href="#cover" class="home_tab_flipped"></a>
-    </div>
-
-    <div class="open_folder" style="--top: 115%;" id="about">
-        <div class="content_page" style="--bg_color: #2a86d5;"></div>
+        <div class="fake_page fake_page_project">
+            <a href="#project"
+                class="project_tab no_textdec lucidahandwriting-normal font-size-m text_align">Projects</a>
+        </div>
+        <div class="fake_page fake_page_about">
+            <a href="#about" class="about_tab no_textdec lucidahandwriting-normal font-size-m text_align">About</a>
+        </div>
+        <div class="main_page">
+            <a href="#cover" class="home_tab "><p class="no_textdec lucidahandwriting-normal font-size-m text_align home_tab_text">Bare, G</p></a>
+            <h2 class="classified couriernew-normal font-size-large font-color-red">CLASSIFIED</h2>
+        </div>
     </div>
 
-    <div class="closed_folder closed_folder_loc" style="--top:230%;--right:10%;">
-        <a href="#contact" class="contact_tab">Contact</a>
-        <a href="#project" class="project_tab">Projects</a>
+    <div class="open_folder open_folder_about" id="about">
+        <div class="closed_folder">
+            <h1 class="programme-extraordinaire-garett-bare couriernew-normal font-size-large">Programme
+                Extraordinaire<br><br>Garett Bare</h1>
+            <a href="#cover" class="home_tab_flipped"></a>
+        </div>
+        <div class="closed_folder">
+            <a href="#project"
+                class="project_tab no_textdec lucidahandwriting-normal font-size-m text_align">Projects</a>
+            <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-m text_align">Contact</a>
+            <div class="content_page content_page_about">
+                <a href="#about" class="about_tab no_textdec lucidahandwriting-normal font-size-m text_align">About</a>
+            </div>
+        </div>
     </div>
 
-    <div class="closed_folder closed_folder_loc" style="--top:230%;--right:50%;">
-        <a href="#cover" class="home_tab_flipped"></a>
-        <a href="#about" class="about_tab_flipped">About</a>
+    <div class="open_folder open_folder_project" id="project">
+        <div class="closed_folder">
+            <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-m text_align">Contact</a>
+            <div class="content_page content_page_project"></div>
+            <a href="#project"
+                class="project_tab no_textdec lucidahandwriting-normal font-size-m text_align">Projects</a>
+        </div>
+        <div class="closed_folder">
+            <a href="#cover" class="home_tab_flipped"></a>
+            <a href="#about" class="about_tab_flipped">About</a>
+            <div class="content_page content_page_project"></div>
+        </div>
     </div>
-    <div class="open_folder" style="--top: 230%;" id="project">
-        <div class="content_page" style="--bg_color: var(--conifer);"></div>
-    </div>
-    <div class="closed_folder closed_folder_loc" style="--top:345%;--right:10%;">
-        <a href="#contact" class="contact_tab">Contact</a>
-    </div>
-    <div class="closed_folder closed_folder_loc" style="--top:345%;--right:50%;">
-        <a href="#cover" class="home_tab_flipped"></a>
-        <a href="#about" class="about_tab_flipped">About</a>
-        <a href="#project" class="project_tab_flipped">Projects</a>
-    </div>
-    <div class="open_folder" style="--top: 345%;" id="contact">
-        <div class="content_page" style="--bg_color: red;"></div>
+    <div class="open_folder open_folder_contact" id="contact">
+        <div class="closed_folder">
+            <div class="content_page content_page_contact"></div>
+            <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-m text_align">Contact</a>
+        </div>
+        <div class="closed_folder">
+            <a href="#cover" class="home_tab_flipped"></a>
+            <a href="#about" class="about_tab_flipped">About</a>
+            <a href="#project" class="project_tab_flipped">Projects</a>
+            <div class="content_page content_page_project"></div>
+        </div>
     </div>
     <div class="header">
-        <h1>Portfolio</h1>
-        <span class="header_info reemkufi-normal-black-48px"></span>
-
+        <span class="no_top no_side">---------<br>---------<br>---------</span>
+        <span class="header_info couriernew-normal font-color-black "></span>
     </div>
 </body>
 
