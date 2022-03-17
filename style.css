@@ -391,16 +391,15 @@ html {
 
 .closed_folder:nth-child(2){
   border-bottom-right-radius: 44px;
-right: 0rem;
-top: 0rem;
-border-top-right-radius: 44px;
+  right: 0rem;
+  top: 0rem;
+  border-top-right-radius: 44px;
 }
 
 .closed_folder:nth-child(1){
   border:2px #ac9767;
   border-style: none solid none;
   border-bottom-left-radius: 44px;
-  border-top-left-radius: 5px;
   right: 50rem;
   top: 0rem;
 
