@@ -231,6 +231,7 @@ html {
     position: absolute;
     width: 55rem;
     box-shadow: val(rgba(37, 37, 37, 0.363));
+    box-shadow: .2rem .2rem .2rem rgba(3, 3, 3, 0.301);
 }
 
 
@@ -260,6 +261,7 @@ html {
   border-bottom-left-radius: 5px; */
   top:1rem;
   position: absolute;
+  box-shadow: .2rem .2rem .2rem rgba(3, 3, 3, 0.301);
 }
 
 .fake_page_filler1{
