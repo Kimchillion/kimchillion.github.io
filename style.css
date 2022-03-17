@@ -38,6 +38,7 @@ rgba(255, 255, 255, 1);
 html {
   scroll-padding-top: 10%; /* height of sticky header */
   font-size: 62.5%;
+  overflow:hidden;
   
 }
 
@@ -466,7 +467,6 @@ html {
     background-color: var(--transparent);
     height: 70rem;
     left:15rem;
-    top: var(--top);
     position: absolute;
     width: 100rem;
 }
@@ -481,7 +481,11 @@ html {
 }
 
 .hidden_background_contact{
-  top:375rem;
+  top:390rem;
+}
+
+.hidden_background_spacing{
+  top:520rem;
 }
 
 
