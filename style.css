@@ -7,7 +7,7 @@
   --paper:
   #fbfbf8;
   --about:
-    #2a86d5;
+  #2a86d5;
   --contact: 
 rgba(176, 218, 55, 1);
   --black: 
@@ -52,6 +52,16 @@ html {
     font-size: 1%;
   }
 } */
+
+.add_shadow{
+  box-shadow: .25rem 0rem .5rem rgba(3, 3, 3, 0.301);
+}
+.home_tab_shadow{
+  box-shadow: .2rem -.25rem .2rem rgba(3, 3, 3, 0.301);
+}
+.fake_page_filler_shadow{
+  box-shadow: .2rem -.25rem .3rem rgba(3, 3, 3, 0.301);
+}
 .no_top{
   top:0;
 }
@@ -67,11 +77,21 @@ html {
   text-align: center;
 }
 
+.sticky_note_tab{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #f5ecd962;
+  height:10rem;
+  position:absolute;
+  width:8rem;
+  box-shadow: 0rem 0rem .1rem rgba(3, 3, 3, 0.301)  ;
+}
+
 .home_tab {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #f1d592;
-  height:3rem;
+  height:3.1rem;
   right:-9rem;
   position:absolute;
   top:6rem;
@@ -87,7 +107,7 @@ html {
   transform: rotate(-2deg);
 }
 
-.home_tab_flipped {
+.home_tab_b {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #c4ac74;
@@ -99,28 +119,52 @@ html {
   transform: rotate(90deg);
 }
 
+
+.about_sticky_tab{
+  transform: rotate(-5deg);
+  right:-3.2rem;
+  top:13rem;
+}
+.about_sticky_tab_b{
+  transform: rotate(5deg);
+  left:-3.2rem;
+  top:13rem;
+}
+
 .about_tab{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--about);
   height:3rem;
-  right:-7rem;
+  right:-5rem;
   position:absolute;
-  top:18rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(90deg);
 }
 
-.about_tab_flipped{
+ 
+.about_tab_b{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--about);
   height:3rem;
-  left:-7rem;
+  left:-5rem;
   position:absolute;
-  top:20rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(-90deg);
+}
+
+.project_sticky_tab{
+  transform: rotate(6deg);
+  right:-3.2rem;
+  top:30rem;
+}
+.project_sticky_tab_b{
+  transform: rotate(-6deg);
+  left:-3.2rem;
+  top:30rem;
 }
 
 .project_tab{
@@ -128,23 +172,34 @@ html {
   border-top-left-radius: 20px;
   background-color: red;
   height:3rem;
-  right:-7rem;
+  right:-5rem;
   position:absolute;
-  top:33rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(90deg);
 }
 
-.project_tab_flipped{
+.project_tab_b{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;  
   background-color: red;
   height:3rem;
-  left:-7rem;
+  left:-5rem;
   position:absolute;
-  top:33rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(-90deg);
+}
+
+.contact_sticky_tab{
+  transform: rotate(2deg);
+  right:-3.2rem;
+  top:50rem;
+}
+.contact_sticky_tab_b{
+  transform: rotate(-2deg);
+  left:-3.2rem;
+  top:50rem;
 }
 
 .contact_tab{
@@ -152,20 +207,20 @@ html {
   border-top-left-radius: 20px;
   background-color: var(--contact);
   height:3rem;
-  right:-7rem;
+  right:-5rem;
   position:absolute;
-  top:55rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(90deg);
 }
-.contact_tab_flipped{
+.contact_tab_b{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--contact);
   height:3rem;
-  left:-7rem;
+  left:-5rem;
   position:absolute;
-  top:74rem;
+  top:3.5rem;
   width:10rem;
   transform: rotate(-90deg);
 }
@@ -242,17 +297,11 @@ html {
     left:0rem;
     position: absolute;
     width: 55rem;
-    box-shadow: val(rgba(37, 37, 37, 0.363));
-    box-shadow: .2rem .2rem .2rem rgba(3, 3, 3, 0.301);
 }
 
 
 .main_backpage{
   background-color: var(--transparent);
-  border-bottom-right-radius: 44px;
-  border-top-right-radius: 44px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
   height: 85rem;
   left: 40%;
   position: absolute;
@@ -260,7 +309,6 @@ html {
   overflow: hidden;
   transform: rotate(-8deg);
 }
-
 
 .avoid_header{
   top:3%;
@@ -273,15 +321,12 @@ html {
   border-bottom-left-radius: 5px; */
   top:1rem;
   position: absolute;
-  box-shadow: .2rem .2rem .2rem rgba(3, 3, 3, 0.301);
 }
 
 .fake_page_filler1{
   z-index: -3;
   height: 64rem;
   top:0rem;
-  border: 2px grey;
-  border-style: solid;
   width:54rem;
   left:4rem;
   transform: rotate(-10deg);
@@ -289,8 +334,6 @@ html {
 .fake_page_filler2{
   z-index: -2;
   height: 65rem;
-  border: 2px grey;
-  border-style: solid;
   width:30rem;
   top:-1rem;
   left:2rem;
@@ -299,8 +342,6 @@ html {
 .fake_page_filler3{
   z-index: -4;
   height: 65rem;
-  border: 2px grey;
-  border-style: solid;
   width:45rem;
   left:.5rem;
   top:-1rem;
@@ -309,8 +350,8 @@ html {
   z-index: 0;
   top:5rem;
   height: 65rem;
-  /* border: 15px var(--paper); */
-  border: 15px var(--about);
+  border: 15px var(--paper);
+  /* border: 15px var(--about); */
   border-style: solid;
   width:55rem;
   left:-1rem;
@@ -320,33 +361,36 @@ html {
   right:1rem;
   height: 65rem;
   top:3rem;
-  border: 15px var(--about);
+  border: 15px var(--paper);
+  /* border: 15px var(--about); */
   border-style: solid;
   width:54rem;
   transform: rotate(-2deg);
 }
-.fake_page_contact{
+
+/* .fake_page_contact{
   z-index: -2;
   top:6rem;
   height: 65rem;
   left:1rem;
   border: 15px var(--contact);
-  /* border: 15px var(--paper); */
+  border-style: solid;
+  transform: rotate(-5deg);
+  width:54rem;
+} */
+
+.fake_page_contact{
+  z-index: 0;
+  top:4rem;
+  left:1rem;
+  height: 65rem;
+  /* border: 15px var(--contact); */
+  border: 15px var(--paper);
   border-style: solid;
   transform: rotate(-5deg);
   width:54rem;
 }
 
-.fake_page_contact_f{
-  z-index: 0;
-  top:4rem;
-  left:1rem;
-  height: 65rem;
-  border: 15px var(--contact);
-  border-style: solid;
-  transform: rotate(-5deg);
-  width:54rem;
-}
 .fake_page_contact_b{
   top:4rem;
   left:1rem;
@@ -356,25 +400,26 @@ html {
   transform: rotate(-5deg);
   width:54rem;
 }
-
+/* 
 .fake_page_project{
   z-index: -2;
   top:6rem;
   height: 65rem;
   left:1rem;
-  /* border: 15px var(--paper); */
+  border: 15px var(--paper);
   border: 15px red;
   border-style: solid;
   transform: rotate(3deg);
   width:55rem;
-}
+} */
 
-.fake_page_project_f{
+.fake_page_project{
   left:2rem;
   height: 65rem;
-  border: 15px red;
+  border: 15px var(--paper);
   border-style: solid;
   width:55rem;
+  top:3rem;
   transform: rotate(3deg);
 }
 .fake_page_project_b{
@@ -382,7 +427,7 @@ html {
   right:-2rem;
   height: 65rem;
   top:3rem;
-  border: 15px red;
+  border: 15px var(--paper);
   border-style: solid;
   width:55rem;
   transform: rotate(3deg);
@@ -419,9 +464,6 @@ html {
 
 .hidden_background{
     background-color: var(--transparent);
-    border-top-right-radius: 44px;
-    border-bottom-right-radius: 44px;
-    border-bottom-left-radius: 44px;
     height: 70rem;
     left:15rem;
     top: var(--top);
@@ -458,15 +500,21 @@ html {
 }
 
 .content_page_contact{
-  border: 25px var(--contact);
+  /* border: 25px var(--contact); */
+  border: 15px var(--paper);
   border-style: solid solid solid solid;
+  transform: rotate(-5deg);
 }
 .content_page_project{
-  border: 25px red;
+  border: 15px var(--paper);
+  /* border: 25px red; */
   border-style: solid solid solid solid;
+  left:1rem;
+  transform: rotate(3deg);
 }
 .content_page_about{
-  border: 25px var(--about);
+  /* border: 25px var(--about); */
+  border: 15px var(--paper);
   border-style: solid solid solid solid;
   transform: rotate(7deg);
 }
