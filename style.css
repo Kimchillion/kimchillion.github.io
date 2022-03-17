@@ -367,6 +367,7 @@ html {
   z-index: 2;
   right:-2rem;
   height: 65rem;
+  top:3rem;
   border: 15px red;
   border-style: solid;
   width:55rem;
