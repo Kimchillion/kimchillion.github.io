@@ -306,6 +306,18 @@ html {
   left:10.5%;
   transform: rotate(2deg);
 }
+
+.fake_page_contact_b{
+  top:4%;
+  left:5%;
+  height: 92%;
+  border: 15px var(--about);
+  border-style: solid;
+  transform: rotate(-5deg);
+  width:94%;
+}
+
+
 .fake_page_contact{
   z-index: -2;
   top:6%;
@@ -318,7 +330,7 @@ html {
   width:54%;
 }
 
-.fake_page_contact_p1{
+.fake_page_contact_f{
   top:4%;
   left:5%;
   height: 92%;
@@ -339,7 +351,7 @@ html {
   width:52%;
 }
 
-.fake_page_project_p1{
+.fake_page_project_f{
   left:5%;
   height: 94%;
   border: 15px red;

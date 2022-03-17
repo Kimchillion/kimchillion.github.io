@@ -98,6 +98,7 @@ html {
   width:10rem;
   transform: rotate(90deg);
 }
+
 .about_tab_flipped{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -126,11 +127,10 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;  
   background-color: red;
-
   height:3rem;
-  right:-7rem;
+  left:-7rem;
   position:absolute;
-  top:52rem;
+  top:33rem;
   width:10rem;
   transform: rotate(-90deg);
 }
@@ -302,6 +302,15 @@ html {
   left:-1rem;
   transform: rotate(4deg);
 }
+.fake_page_about_b{
+  right:1rem;
+  height: 65rem;
+  top:3rem;
+  border: 15px var(--about);
+  border-style: solid;
+  width:54rem;
+  transform: rotate(-2deg);
+}
 .fake_page_contact{
   z-index: -2;
   top:6rem;
@@ -314,7 +323,17 @@ html {
   width:54rem;
 }
 
-.fake_page_contact_p1{
+.fake_page_contact_f{
+  z-index: 0;
+  top:4rem;
+  left:1rem;
+  height: 65rem;
+  border: 15px var(--contact);
+  border-style: solid;
+  transform: rotate(-5deg);
+  width:54rem;
+}
+.fake_page_contact_b{
   top:4rem;
   left:1rem;
   height: 65rem;
@@ -332,20 +351,31 @@ html {
   /* border: 15px var(--paper); */
   border: 15px red;
   border-style: solid;
+  transform: rotate(3deg);
   width:55rem;
 }
 
-.fake_page_project_p1{
-  left:5rem;
+.fake_page_project_f{
+  left:2rem;
   height: 65rem;
   border: 15px red;
   border-style: solid;
   width:55rem;
+  transform: rotate(3deg);
+}
+.fake_page_project_b{
+  z-index: 2;
+  right:-2rem;
+  height: 65rem;
+  border: 15px red;
+  border-style: solid;
+  width:55rem;
+  transform: rotate(3deg);
 }
 
 .closed_folder{
     background-color: #c4ac74;
-    height: 100rem;
+    height: 70rem;
     right: 0rem;
     position: absolute;
     width: 50rem;
@@ -378,8 +408,8 @@ border-top-right-radius: 44px;
     border-top-right-radius: 44px;
     border-bottom-right-radius: 44px;
     border-bottom-left-radius: 44px;
-    height: 85rem;
-    left:7rem;
+    height: 70rem;
+    left:15rem;
     top: var(--top);
     position: absolute;
     width: 100rem;
@@ -445,14 +475,47 @@ border-top-right-radius: 44px;
 .programme-extraordinaire-garett-bare {
   left:3rem;
   letter-spacing: 0;
-  line-height: 150rem;
+  line-height: 5rem;
   position: absolute;
   text-align: center;
-  top: 30rem;
+  top: 25rem;
   transform: rotate(-10deg);
   border-style: groove;
   border-color: black;
   /* width: 50rem; */
+}
+
+.contact_info{
+  left:10rem;
+  letter-spacing: 0;
+  line-height: 5rem;
+  position: absolute;
+  text-align: center;
+  top: 10rem;
+  transform: rotate(0deg);
+  border-style: groove;
+  border-color: black;
+}
+
+.project_info{
+  left:10rem;
+  letter-spacing: 0;
+  line-height: 5rem;
+  position: absolute;
+  text-align: center;
+  top: 10rem;
+  transform: rotate(0deg);
+  border-style: groove;
+  border-color: black;
+}
+
+.about_info{
+  left:0rem;
+  letter-spacing: 0;
+  line-height: 3rem;
+  position: absolute;
+  text-align: center;
+  top: 8rem;
 }
 /* 
 .programme-extraordinaire-garett-bare::before{    
