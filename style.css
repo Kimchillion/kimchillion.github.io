@@ -332,6 +332,7 @@ html {
   left:4rem;
   transform: rotate(-10deg);
 }
+
 .fake_page_filler2{
   z-index: -2;
   height: 65rem;
