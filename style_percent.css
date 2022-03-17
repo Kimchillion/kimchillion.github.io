@@ -1,6 +1,3 @@
-
-
-
 :root {
   --transparent:
   rgba(0, 0, 0, 0);
@@ -27,17 +24,15 @@ rgba(206, 197, 119, 1);
   --white: 
 rgba(255, 255, 255, 1);
 
+  --font-size-m: 180%;
+  --font-size-l: 425%;
+  --font-size-cla:800%;
 
   --font-family-couriernew:"Courier New", Courier, Monospace;
-  --font-size-m: 2rem;
-  --font-size-l: 3.5rem;
-  --font-size-cla: 8rem;
 }
 
 html {
   scroll-padding-top: 10%; /* height of sticky header */
-  font-size: 62.5;
-  
 }
 
 .no_top{
@@ -54,16 +49,15 @@ html {
 .fit_text{
   text-align: center;
 }
-
 .home_tab {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: #f1d592;
-  height:3rem;
-  right:-9rem;
+  height:5%;
+  right:-15%;
   position:absolute;
-  top:6rem;
-  width:15rem;
+  top:8.5%;
+  width:25%;
   transform: rotate(90deg);
 }
 .home_tab_text{  
@@ -79,11 +73,11 @@ html {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #c4ac74;
-  height:3rem;
-  left:-9rem;
+  height:5%;
+  left:-15%;
   position:absolute;
-  top:6rem;
-  width:15rem;
+  top:7.7%;
+  width:25%;
   transform: rotate(90deg);
 }
 
@@ -91,22 +85,22 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--about);
-  height:3rem;
-  right:-7rem;
+  height:3%;
+  right:-13%;
   position:absolute;
-  top:18rem;
-  width:10rem;
+  top:25%;
+  width:20%;
   transform: rotate(90deg);
 }
 .about_tab_flipped{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--about);
-  height:3rem;
-  left:-7rem;
+  height:5%;
+  left:-10%;
   position:absolute;
-  top:20rem;
-  width:10rem;
+  top:20%;
+  width:20%;
   transform: rotate(-90deg);
 }
 
@@ -114,11 +108,11 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: red;
-  height:3rem;
-  right:-7rem;
+  height:3%;
+  right:-13%;
   position:absolute;
-  top:33rem;
-  width:10rem;
+  top:52%;
+  width:20%;
   transform: rotate(90deg);
 }
 
@@ -127,11 +121,11 @@ html {
   border-top-left-radius: 20px;  
   background-color: red;
 
-  height:3rem;
-  right:-7rem;
+  height:5%;
+  right:-10%;
   position:absolute;
-  top:52rem;
-  width:10rem;
+  top:52%;
+  width:20%;
   transform: rotate(-90deg);
 }
 
@@ -139,22 +133,22 @@ html {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--contact);
-  height:3rem;
-  right:-7rem;
+  height:3%;
+  right:-13%;
   position:absolute;
-  top:55rem;
-  width:10rem;
+  top:74%;
+  width:20%;
   transform: rotate(90deg);
 }
 .contact_tab_flipped{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   background-color: var(--contact);
-  height:3rem;
-  left:-7rem;
+  height:3%;
+  left:-13%;
   position:absolute;
-  top:74rem;
-  width:10rem;
+  top:74%;
+  width:20%;
   transform: rotate(-90deg);
 }
 
@@ -194,7 +188,7 @@ html {
 
 .header{
     background-color: rgba(255, 255, 255, 0.459);
-    height:6rem;
+    height:10%;
     position:fixed;
     width:100%;
     left:0px;
@@ -202,17 +196,17 @@ html {
 }
 
 .header_info{
-  right: 5rem;
+  right: 5%;
   position:absolute;
   top:0;
 }
 
 .page_background{
     height: 100%;
-    width:100%;
     left:0px;
     position: fixed;
     top:0;
+    width:100%;
 }
 
 .text_align{
@@ -225,14 +219,24 @@ html {
     border-bottom-right-radius: 44px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 70rem;
-    top:5rem;
-    left:0rem;
+    height: 80%;
+    top:5%;
+    left:1%;
     position: absolute;
-    width: 55rem;
+    width: 70%;
     box-shadow: val(rgba(37, 37, 37, 0.363));
 }
 
+
+.shadow{
+  z-index: -5;
+  background-color: rgba(37, 37, 37, 0.363);
+  height: 101%;
+  top: -1%;
+  right:5%;
+  width: 100%;
+  position: absolute;
+}
 
 .main_backpage{
   background-color: var(--transparent);
@@ -240,17 +244,17 @@ html {
   border-top-right-radius: 44px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 85rem;
+  height: 120%;
   left: 40%;
   position: absolute;
-  width: 70rem;
+  width: 60%;
   overflow: hidden;
   transform: rotate(-8deg);
 }
 
 
 .avoid_header{
-  top:3%;
+  top:7%;
 }
 /* 95,96,98 */
 .fake_page{
@@ -258,103 +262,103 @@ html {
   /* border-bottom-right-radius: 44px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; */
-  top:1rem;
+  top:1%;
   position: absolute;
 }
 
 .fake_page_filler1{
   z-index: -3;
-  height: 64rem;
-  top:0rem;
+  height: 34%;
+  top:-1%;
   border: 2px grey;
   border-style: solid;
-  width:54rem;
-  left:4rem;
+  width:92%;
+  left:2.5%;
   transform: rotate(-10deg);
 }
 .fake_page_filler2{
-  z-index: -2;
-  height: 65rem;
+  z-index: -1;
+  height: 94%;
   border: 2px grey;
   border-style: solid;
-  width:30rem;
-  top:-1rem;
-  left:2rem;
+  width:45%;
+  top:-2%;
+  left:23%;
   transform: rotate(18deg);
 }
 .fake_page_filler3{
-  z-index: -4;
-  height: 65rem;
+  z-index: -2;
+  height: 94%;
   border: 2px grey;
   border-style: solid;
-  width:45rem;
-  left:.5rem;
-  top:-1rem;
+  width:100%;
+  left:.5%;
+  top:-2%;
 }
 .fake_page_about{
   z-index: 0;
-  top:5rem;
-  height: 65rem;
+  top:5%;
+  height: 77%;
   /* border: 15px var(--paper); */
   border: 15px var(--about);
   border-style: solid;
-  width:55rem;
-  left:-1rem;
-  transform: rotate(4deg);
+  width:60.5%;
+  left:10.5%;
+  transform: rotate(2deg);
 }
 .fake_page_contact{
   z-index: -2;
-  top:6rem;
-  height: 65rem;
-  left:1rem;
+  top:6%;
+  height: 77%;
+  left:3%;
   border: 15px var(--contact);
   /* border: 15px var(--paper); */
   border-style: solid;
   transform: rotate(-5deg);
-  width:54rem;
+  width:54%;
 }
 
 .fake_page_contact_p1{
-  top:4rem;
-  left:1rem;
-  height: 65rem;
+  top:4%;
+  left:5%;
+  height: 92%;
   border: 15px var(--contact);
   border-style: solid;
   transform: rotate(-5deg);
-  width:54rem;
+  width:94%;
 }
 
 .fake_page_project{
   z-index: -2;
-  top:6rem;
-  height: 65rem;
-  left:1rem;
+  top:6%;
+  height: 77%;
+  left:20%;
   /* border: 15px var(--paper); */
   border: 15px red;
   border-style: solid;
-  width:55rem;
+  width:52%;
 }
 
 .fake_page_project_p1{
-  left:5rem;
-  height: 65rem;
+  left:5%;
+  height: 94%;
   border: 15px red;
   border-style: solid;
-  width:55rem;
+  width:92%;
 }
 
 .closed_folder{
     background-color: #c4ac74;
-    height: 100rem;
-    right: 0rem;
+    height: 100%;
+    right: 0%;
     position: absolute;
-    width: 50rem;
+    width: 50%;
 }
 
 .closed_folder:nth-child(2){
   border-bottom-right-radius: 44px;
-right: 0rem;
-top: 0rem;
+right: 0%;
+top: 0%;
 border-top-right-radius: 44px;
 }
 
@@ -363,8 +367,8 @@ border-top-right-radius: 44px;
   border-style: none solid none;
   border-bottom-left-radius: 44px;
   border-top-left-radius: 5px;
-  right: 50rem;
-  top: 0rem;
+  right: 50%;
+  top: 0%;
 
 }
 .closed_folder_loc{
@@ -378,24 +382,24 @@ border-top-right-radius: 44px;
     border-top-right-radius: 44px;
     border-bottom-right-radius: 44px;
     border-bottom-left-radius: 44px;
-    height: 85rem;
-    left:7rem;
+    height: 90%;
+    left:7%;
     top: var(--top);
     position: absolute;
-    width: 100rem;
+    width: 85%;
 }
 
 .hidden_background_about{
-  top:130rem;
+  top:130%;
 }
 
 
 .hidden_background_project{
-  top:260rem;
+  top:260%;
 }
 
 .hidden_background_contact{
-  top:375rem;
+  top:375%;
 }
 
 
@@ -407,10 +411,10 @@ border-top-right-radius: 44px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;   */
-    height: 65rem;
+    height: 94%;
     position: absolute;
-    top: 1rem;
-    width: 54rem;
+    top: 1%;
+    width: 92%;
 }
 
 .content_page_contact{
@@ -427,10 +431,10 @@ border-top-right-radius: 44px;
   transform: rotate(7deg);
 }
 .classified{
-    left:7rem;
+    left:3%;
     position:absolute;
     /* text-align: center; */
-    top: 20rem;
+    top: 30%;
     transform: rotate(75deg);
     border-width: 3px;
     border-style: groove;
@@ -443,16 +447,16 @@ border-top-right-radius: 44px;
 
 
 .programme-extraordinaire-garett-bare {
-  left:3rem;
+  left:3%;
   letter-spacing: 0;
-  line-height: 150rem;
+  line-height: 150%;
   position: absolute;
   text-align: center;
-  top: 30rem;
+  top: 30%;
   transform: rotate(-10deg);
   border-style: groove;
   border-color: black;
-  /* width: 50rem; */
+  /* width: 50%; */
 }
 /* 
 .programme-extraordinaire-garett-bare::before{    
