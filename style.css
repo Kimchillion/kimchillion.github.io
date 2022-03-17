@@ -34,17 +34,24 @@ rgba(255, 255, 255, 1);
   --font-size-cla: 8rem;
 }
 
-@media only screen and (width: 600px) {
+
+html {
+  scroll-padding-top: 10%; /* height of sticky header */
+  font-size: 62.5%;
+  
+}
+
+/* @media screen and (width: 600px) {
   html{
   font-size: 31.25%;
   }
 }
-html {
-  scroll-padding-top: 10%; /* height of sticky header */
-  font-size: 62.5;
-  
-}
 
+@media screen and (width: 4000px) {
+  html{
+    font-size: 1%;
+  }
+} */
 .no_top{
   top:0;
 }
