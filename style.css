@@ -41,18 +41,18 @@ html {
   overflow:hidden;
   
 }
-
-/* @media screen and (width: 600px) {
-  html{
-  font-size: 31.25%;
-  }
-}
-
-@media screen and (width: 4000px) {
+/* @media screen and (max-width: 4000px) {
   html{
     font-size: 1%;
   }
 } */
+
+@media screen and (max-width: 600px) {
+  html{
+  font-size: 32%;
+  }
+}
+
 
 .add_shadow{
   box-shadow: .25rem 0rem .5rem rgba(3, 3, 3, 0.301);
@@ -304,7 +304,7 @@ html {
 .main_backpage{
   background-color: var(--transparent);
   height: 85rem;
-  left: 40%;
+  left: 25%;
   position: absolute;
   width: 70rem;
   overflow: hidden;
@@ -312,7 +312,7 @@ html {
 }
 
 .avoid_header{
-  top:3%;
+  top:14.5%;
 }
 /* 95,96,98 */
 .fake_page{
@@ -473,20 +473,20 @@ html {
 }
 
 .hidden_background_about{
-  top:130rem;
+  top:130%;
 }
 
 
 .hidden_background_project{
-  top:260rem;
+  top:260%;
 }
 
 .hidden_background_contact{
-  top:390rem;
+  top:390%;
 }
 
 .hidden_background_spacing{
-  top:520rem;
+  top:520%;
 }
 
 
