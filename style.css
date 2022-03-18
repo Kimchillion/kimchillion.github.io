@@ -639,9 +639,9 @@ img{
     --avoid-header-side:10rem;
   }
 
-  .mobile_rotation{
+  /* .mobile_rotation{
     transform: rotate(90deg);
-  }
+  } */
 }
 
 
