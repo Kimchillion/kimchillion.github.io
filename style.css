@@ -31,6 +31,9 @@ rgba(255, 255, 255, 1);
   --font-size-l: 3.5rem;
   --font-size-cla: 8rem;
   --x-spacing:50%;
+  --avoid-header-top:13.6%;
+  --avoid-header-side:65rem;
+  --spacing-hb-side:30rem;
 }
 
 
@@ -304,7 +307,8 @@ img{
   height: 85rem;
   position: absolute;
   width: 70rem;
-  left: var(--x-spacing);
+  left: var(--avoid-header-side);
+  top: var(--avoid-header-top);
   overflow: hidden;
   transform: rotate(-8deg);
 }
@@ -466,25 +470,25 @@ img{
 .hidden_background{
     background-color: var(--transparent);
     height: 70rem;
-    left:15rem;
+    left: var(--spacing-hb-side);
     position: absolute;
     width: 100rem;
 }
 
 .hidden_background_about{
-  top:300rem;
+  top:400rem;
 }
 
 .hidden_background_project{
-  top:600rem;
+  top:800rem;
 }
 
 .hidden_background_contact{
-  top:900rem;
+  top:1200rem;
 }
 
 .hidden_background_spacing{
-  top:1200rem;
+  top:1600rem;
 }
 
 
@@ -629,11 +633,14 @@ img{
   html{
   font-size: 100%;
   }
+
   :root{
+    --avoid-header-top:50%;
+    --avoid-header-side:10rem;
   }
-  .avoid_header{
-    top:50rem;
-    left:20rem;
+
+  .mobile_rotation{
+    transform: rotate(90deg);
   }
 }
 
