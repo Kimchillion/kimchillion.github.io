@@ -705,11 +705,10 @@ img{
   html{
   font-size: 100%;
   }
-  
 }
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1920px) {
   html{
-  font-size: 100%;
+  font-size: 62.5%;
   }
   
 }
