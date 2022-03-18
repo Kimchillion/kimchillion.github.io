@@ -36,8 +36,11 @@ rgba(255, 255, 255, 1);
 html {
   scroll-padding-top: 10%; /* height of sticky header */
   font-size: 62.5%;
-  overflow:hidden;
-  
+  overflow:hidden;  
+}
+
+img{
+  max-width: 100%;
 }
 /* @media screen and (max-width: 4000px) {
   html{
@@ -441,14 +444,14 @@ html {
     width: 50rem;
 }
 
-.closed_folder:nth-child(2){
+.closed_folder_right{
   border-bottom-right-radius: 44px;
   right: 0rem;
   top: 0rem;
   border-top-right-radius: 44px;
 }
 
-.closed_folder:nth-child(1){
+.closed_folder_left{
   border:2px #ac9767;
   border-style: none solid none;
   border-bottom-left-radius: 44px;
@@ -548,6 +551,34 @@ html {
   border-style: groove;
   border-color: black;
   /* width: 50rem; */
+}
+
+.polaroid_main{
+  background-color: #fbfbf8;
+  height:45%;
+  width:55%;
+  position: absolute;
+}
+
+.polaroid_selfie1{
+  transform: rotate(-25deg);
+  left:-10%;
+  top:8%;
+}
+
+.polaroid_selfie2{
+  z-index: 1000;
+  transform: rotate(10deg);
+  left:50%;
+  top:-8%;
+}
+
+.selfie{
+  position:absolute;
+  left:10%;
+  top:5%;
+  max-width:80%;
+  filter:grayscale(100%)
 }
 
 .contact_info{
