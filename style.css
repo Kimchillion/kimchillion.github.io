@@ -580,6 +580,14 @@ img{
   max-width:80%;
   filter:grayscale(100%)
 }
+.selfie16-9{
+  position:absolute;
+  left:10%;
+  top:5%;
+  height:20%;
+  max-width:80%;
+  filter:grayscale(100%)
+}
 
 .contact_info{
   left:10rem;
