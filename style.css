@@ -107,15 +107,17 @@ rgba(255, 255, 255, 1);
   }
   
   .home_tab_b {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 1vw;
     background-color: #c4ac74;
-    height:3rem;
-    left:-9rem;
+    height:15vh;
+
+    /* left:0vw; */
     position:absolute;
-    top:6rem;
-    width:15rem;
-    transform: rotate(90deg);
+    top:0vh;
+    left:-2.4vw;
+    width:2.5vw;
+    /* transform: rotate(90deg); */
   }
   
   
@@ -485,17 +487,19 @@ rgba(255, 255, 255, 1);
   
       background-color: #c4ac74;
       height: 70vh;
-      min-width: 25rem;
-      right: 0vw;
+      /* min-width: 25rem; */
+      /* top:50vh;s */
       position: absolute;
       width: 35vw;
       /* width: 50rem; */
+      transform: rotate(10deg);
   }
   
   .closed_folder_right{
     border-bottom-right-radius: 44px;
     /* right: 0rem; */
-    top: 0rem;
+    right: 0vw;
+    top: 10vw;
     border-top-right-radius: 44px;
   }
   
@@ -503,8 +507,8 @@ rgba(255, 255, 255, 1);
     border:2px #ac9767;
     border-style: none solid none;
     border-bottom-left-radius: 44px;
-    left:35vw;
-    top: 0rem;
+    left:31vw;
+    top: 4vw;
   
   }
   .closed_folder_loc{
