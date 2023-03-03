@@ -151,7 +151,7 @@ rgba(255, 255, 255, 1);
     border-bottom-left-radius: 1vw;
     background-color: var(--about);
     height:10vh;
-    left:-1.9rem;
+    left:-1.9vw;
     position:absolute;
     /* top:3.5rem; */
     width:2vw;
@@ -630,29 +630,29 @@ rgba(255, 255, 255, 1);
     z-index:2;
     z-index: 1000;
     transform: rotate(4deg);
-    left:15vw;
-    top:50vh;
+    left:18vw;
+    top:40vh;
   }
   .polaroid_prison16-9-2{
     z-index:1;
     z-index: 1000;
     transform: rotate(4deg);
-    left:15vw;
-    top:50vh;
+    left:18vw;
+    top:40vh;
   }
   
   .polaroid_movement16-9-1{
     z-index:2;
     z-index: 1000;
     transform: rotate(-50deg);
-    left: -4vw;
+    left: 0vw;
     top: 43vh;
   }
   .polaroid_movement16-9-2{
     z-index:2;
     z-index: 1000;
     transform: rotate(-50deg);
-    left: -4vw;
+    left: 0vw;
     top:43vh;
   }
   
