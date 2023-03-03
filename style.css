@@ -45,6 +45,7 @@ rgba(255, 255, 255, 1);
     font-size: 62.5%;
     /* font-size:100%; */
     overflow: hidden;
+    position: fixed;
   }
   
   
@@ -499,7 +500,7 @@ rgba(255, 255, 255, 1);
     border-bottom-right-radius: 44px;
     /* right: 0rem; */
     right: 0vw;
-    top: 10vw;
+    top: 7vw;
     border-top-right-radius: 44px;
   }
   
@@ -508,7 +509,7 @@ rgba(255, 255, 255, 1);
     border-style: none solid none;
     border-bottom-left-radius: 44px;
     left:31vw;
-    top: 4vw;
+    top: 1vw;
   
   }
   .closed_folder_loc{
@@ -569,12 +570,13 @@ rgba(255, 255, 255, 1);
   
   
   .programme-extraordinaire-garett-bare {
-    left:3rem;
+    left:3vw;
     letter-spacing: 0;
-    line-height: 5rem;
+    line-height: 5vh;
     position: absolute;
+    font-size: 3vw;
     text-align: center;
-    top: 25rem;
+    top: 20vh;
     transform: rotate(-10deg);
     border-style: groove;
     border-color: black;
@@ -658,10 +660,10 @@ rgba(255, 255, 255, 1);
   
   .selfie{
     position:absolute;
-    left:6.5%;
+    left:8%;
     top:6.5%;
-    height:75%;
-    max-width:87%;
+    height:80%;
+    max-width:90%;
     filter:grayscale(100%)
   }
   
