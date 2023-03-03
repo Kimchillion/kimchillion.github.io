@@ -587,7 +587,7 @@ rgba(255, 255, 255, 1);
   
   .polaroid_selfie1{
     transform: rotate(-25deg);
-    top:-3vh;
+    top:3vh;
     left:-2vw;
     z-index: 100;
   }
