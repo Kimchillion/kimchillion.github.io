@@ -8,66 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- Convert all the "pages" to SVG instead of divs? Give it a try, if doesn't work: figure out why CSS: Right:0deg doesn't start it AT the right?-->
 
 <body>
-    <script>
-        tabs=['cover','about','contact','project']
-        function changeTab(clicked){
-            for (i in tabs){
-                if (!document.getElementById(tabs[i]).className.includes('hidden')){
-                    document.getElementById(tabs[i]).className += " hidden"
-                    console.log(`added hidden to ${tabs[i]}`)
-                }
-                else{
-                    console.log(`${tabs[i]} already contains hidden`)
-                }
-            }
-            switch(clicked){
-                case ("Contact"):
-                document.getElementById("contact").className =document.getElementById("contact").className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
-                    console.log("You clicked Contact!")
-                    break
-                case ("About"):
-                    document.getElementById("about").className =document.getElementById("about").className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
-                    break
-                case ("Project"):
-                    document.getElementById("project").className =document.getElementById("project").className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
-                    break
-                case ("Cover"):
-                    document.getElementById("cover").className =document.getElementById("cover").className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
-                    break
-            }
-        }
-
-    </script>
     <!-- <img src="wood-table2.jpg" alt="Italian Trulli" class="page_background"> -->
     <img src="Blank.jpg" alt="Italian Trulli" class="page_background">
-    <!-- <div class="page_background"></div> -->
+    <div class="page_background"></div>
 
-    <!-- <header class="main_backpage mobile_rotation x-spacing" id="cover"> -->
-    <header class="boundingbox x-spacing" id="boundingBox">
-        <div class="cover" id="cover">
-            
+    <header class="main_backpage mobile_rotation x-spacing" id="cover">
         <div class="fake_page fake_page_contact fake_page_filler_shadow">
-            <div class="sticky_note_tab contact_sticky_tab ">
-                <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
-                    Contact 
-                </div>
+            <div class="sticky_note_tab contact_sticky_tab">
+                <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a>
             </div>
         </div>
         <div class="fake_page fake_page_project fake_page_filler_shadow">
             <div class="sticky_note_tab project_sticky_tab">
-                <div class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
-                   <p class="project_tab_text">Project</p>
-                </div>
+                <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a>
             </div>
         </div>
         <div class="fake_page fake_page_about fake_page_filler_shadow">
             <div class="sticky_note_tab about_sticky_tab">
-                <div class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
-                    About 
-                </div>
+                <a href="#about" class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">About</a>
             </div>
         </div>
         <div class="main_page add_shadow">
@@ -75,30 +35,18 @@
             <div class="fake_page fake_page_filler1 fake_page_filler_shadow"></div>
             <div class="fake_page fake_page_filler2 fake_page_filler_shadow"></div>
             <div class="fake_page fake_page_filler3 fake_page_filler_shadow"></div>
-            <!-- <a href="#cover" class="home_tab home_tab_shadow"> -->
-                <div class="home_tab home_tab_shadow" onclick="changeTab('Cover')">
-                </div>
+            <a href="#cover" class="home_tab home_tab_shadow">
                 <p class="no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align home_tab_text">Bare, G</p>
             </a>
             <h2 class="classified couriernew-normal font-size-classified font-color-red add_shadow">CLASSIFIED</h2>
         </div>
-        
-        <!-- <svg width="100%" height="100%" >
-            <polygon points="0,0 610,0 612,3 613,5 614,8 614,9 615,10 615,130 614,132 613,135 610,138 608,145 600,150 580,150 580,700 0,700"
-            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-          </svg> -->
-    </div>
     </header>
 
-    <!-- <header class="hidden_background hidden_background_about mobile_rotation x-spacing" id="about"> -->
-        <header class="open_page x-spacing hidden" id="about">
+    <header class="hidden_background hidden_background_about mobile_rotation x-spacing" id="about">
         <!-- <div class="hidden_background" style="--top:130%" id="about"> -->
         <div class="closed_folder closed_folder_left add_shadow">
             <h1 class="programme-extraordinaire-garett-bare couriernew-normal font-size-large font-color-black add_shadow">Programme Extraordinaire<br><br>Garett Bare</h1>
-            
-            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Cover')">
-            </div>
-            <!-- <a href="#cover" class="home_tab_b add_shadow"></a> -->
+            <a href="#cover" class="home_tab_b add_shadow"></a>
 
             <div class="polaroid_main polaroid_movement16-9-2 add_shadow"> 
                 <img src="frame1-lean.JPG" class="selfie16-9">
@@ -141,18 +89,12 @@
         <div class="closed_folder closed_folder_right add_shadow">
             <div class="fake_page fake_page_contact fake_page_filler_shadow">
                 <div class="sticky_note_tab contact_sticky_tab">
-                    <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
-                                        Contact 
-                                    </div>
-                    <!-- <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a> -->
+                    <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a>
                 </div>
             </div>
             <div class="fake_page fake_page_project fake_page_filler_shadow">
                 <div class="sticky_note_tab project_sticky_tab">
-                    <div class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
-                        Project 
-                    </div>
-                    <!-- <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a> -->
+                    <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a>
                 </div>
             </div>
             <div class="content_page content_page_about add_shadow">
@@ -164,27 +106,18 @@
             Current Goals:<br>Currently primarily self-taught and working towards developing best practices and industry jargon to ensure my work meets both customer requirements and employer standards.<br>
         To this end I am a soon-to-be graduate of the DevCodeCamp program hosted out of Wisconsin <a href="https://devcodecamp.com/" target="_blank">https://devcodecamp.com/</a></span> -->
                 <div class="sticky_note_tab about_sticky_tab">
-                    <div class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
-                        About 
-                    </div>
-                    <!-- <a href="#about" class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">About</a> -->
+                    <a href="#about" class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">About</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- <header class="hidden_background hidden_background_project mobile_rotation x-spacing" id="project"> -->
-        <header class="open_page x-spacing hidden" id="project">
+    <header class="hidden_background hidden_background_project mobile_rotation x-spacing" id="project">
         <div class="closed_folder closed_folder_left">
-            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Cover')">
-            </div>
-            <!-- <a href="#cover" class="home_tab_b"></a> -->
+            <a href="#cover" class="home_tab_b"></a>
             <div class="fake_page fake_page_about_b fake_page_filler_shadow">
                 <div class="sticky_note_tab about_sticky_tab_b">
-                    <div class="about_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
-                        About 
-                    </div>
-                    <!-- <a href="#about" class="about_tab_b"></a> -->
+                    <a href="#about" class="about_tab_b"></a>
                 </div>
             </div>
             <!-- <div class="content_page content_page_project"></div> -->
@@ -192,10 +125,7 @@
         <div class="closed_folder closed_folder_right">
             <div class="fake_page fake_page_contact fake_page_filler_shadow">
                 <div class="sticky_note_tab contact_sticky_tab">
-                    <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
-                                        Contact 
-                                    </div>
-                    <!-- <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a> -->
+                    <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a>
                 </div>
             </div>
             <div class="content_page content_page_project add_shadow">
@@ -203,59 +133,43 @@
                     <a href="https://github.com/gmbare/DayTripGeneratorProj" class="no_textdec font-color-red" target="_blank">Day Trip Generator</a><br><br></span>
 
                 <div class="sticky_note_tab project_sticky_tab">
-                    <div class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
-                        Project 
-                    </div>
-                    <!-- <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a> -->
+                    <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <!-- <header class="hidden_background hidden_background_contact mobile_rotation x-spacing" id="contact"> -->
-        <header class="open_page x-spacing hidden" id="contact">
+    <header class="hidden_background hidden_background_contact mobile_rotation x-spacing" id="contact">
         <div class="closed_folder closed_folder_left">
-            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Cover')">
-            </div>
-            <!-- <a href="#cover" class="home_tab_b"></a> -->
+            <a href="#cover" class="home_tab_b"></a>
             <div class="fake_page fake_page_about_b fake_page_filler_shadow">
                 <div class="sticky_note_tab about_sticky_tab_b">
-                    <div class="about_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
-                        About 
-                    </div>
-                   <!-- <a href="#about" class="about_tab_b"></a> -->
+                   <a href="#about" class="about_tab_b"></a>
                 </div>
             </div>
             <div class="fake_page fake_page_project_b fake_page_filler_shadow">
                 <div class="sticky_note_tab project_sticky_tab_b">
-                    <div class="project_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
-                        Project 
-                    </div>
-                    <!-- <a href="#project" class="project_tab_b"></a> -->
+                    <a href="#project" class="project_tab_b"></a>
                 </div>
             </div>
         </div>
         <div class="closed_folder closed_folder_right">
             <div class="content_page content_page_contact add_shadow">
-                <span class="contact_info lucidahandwriting-normal font-size-medium text_align">Email:<br>Garett.bare@(gmail|yahoo).com</span>
+                <span class="contact_info lucidahandwriting-normal font-size-medium text_align">Email:<br>Garett.bare@[gmail,yahoo].com</span>
                 <div class="sticky_note_tab contact_sticky_tab">
-                    <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
-                                        Contact 
-                                    </div>
-                    
-                    <!-- <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align">Contact</a> -->
+                    <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align">Contact</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- <header class="hidden_background hidden_background_spacing"> -->
+    <header class="hidden_background hidden_background_spacing">
     
-    <!-- <header class="header">
+    <header class="header">
         <span class="no_top no_side">---------<br>---------<br>---------<br> ^ will be a hamburger menu</span>
         <span class="header_info couriernew-normal font-color-black ">Header is a WIP and does not represent the final</span>
-    </header> -->
+    </header>
 </body>
 
 </html>
