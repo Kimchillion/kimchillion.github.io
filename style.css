@@ -303,13 +303,14 @@ rgba(255, 255, 255, 1);
     background-color: #f1d592;
       /* background-color: blueviolet; */
       min-width: 33vw;
-      border-bottom-right-radius: 44px;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 1.2vw;
+      border-top-left-radius: .1vw;
+      border-bottom-left-radius: .1vw;
       height: 70vh;
       top:5vh;
       left:0px;
       width: 34vw;
+      min-height: 35rem;
       position: relative;
   }
   
@@ -319,6 +320,7 @@ rgba(255, 255, 255, 1);
     /* background-color: var(--transparent); */
     height: 85rem;
     position: absolute;
+    min-height: 35rem;
     width: 70rem;
     left: var(--avoid-header-side);
     top: var(--avoid-header-top);
@@ -337,6 +339,7 @@ rgba(255, 255, 255, 1);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; */
     top:1rem;
+    min-height: 30rem;
     position: absolute;
   }
   
