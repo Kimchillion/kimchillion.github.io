@@ -360,7 +360,7 @@ rgba(255, 255, 255, 1);
   
   .fake_page_contact{
     /* z-index: -1; */
-    top:14%;
+    top:5%;
     right:9%;
     transform: rotate(-5deg);
   }
@@ -378,7 +378,9 @@ rgba(255, 255, 255, 1);
   }
   .fake_page_project_b{
     /* z-index: 2; */
-    right:2vw;
+    
+    right:8%;
+    top:3%;
     transform: rotate(3deg);
   }
   
@@ -416,15 +418,16 @@ rgba(255, 255, 255, 1);
   
   .content_page_contact{
     border: 15px var(--paper);
-    left:3vw;
+    right:5%;
     border-style: solid solid solid solid;
-    transform: rotate(10deg);
+    transform: rotate(-5deg);
   }
   .content_page_project{
     border: 15px var(--paper);
     /* border: 25px red; */
     border-style: solid solid solid solid;
-    left:1rem;
+    right:8%;
+    top:3%;
     transform: rotate(3deg);
   }
   .content_page_about{
@@ -467,16 +470,16 @@ rgba(255, 255, 255, 1);
   
   .polaroid_main{
     background-color: #fbfbf8;
-    height:35vh;
-    width:15vw;
+    height:35%;
+    width:30%;
     position: absolute;
     text-align: center;
   }
   
   .polaroid_selfie1{
     transform: rotate(-25deg);
-    top:3vh;
-    left:-2vw;
+    top:7%;
+    left:-2%;
     z-index: 100;
   }
   
@@ -496,48 +499,47 @@ rgba(255, 255, 255, 1);
   }
   
   .polaroid_selfie16-9-1{
-    z-index:2;
     z-index: 1000;
     transform: rotate(10deg);
-    left:17vw;
-    top:-8vh;
+    left:47%;
+    top:1%;
   }
   .polaroid_selfie16-9-2{
     z-index:1;
     z-index: 1000;
     transform: rotate(10deg);
-    left:17vw;
-    top:-8vh;
+    left:47%;
+    top:1%;
   }
   
   .polaroid_prison16-9-1{
     z-index:2;
     z-index: 1000;
     transform: rotate(4deg);
-    left:18vw;
-    top:40vh;
+    left:50%;
+    top:55%;
   }
   .polaroid_prison16-9-2{
     z-index:1;
     z-index: 1000;
     transform: rotate(4deg);
-    left:18vw;
-    top:40vh;
+    left:50%;
+    top:55%;
   }
   
   .polaroid_movement16-9-1{
     z-index:2;
     z-index: 1000;
     transform: rotate(-50deg);
-    left: 0vw;
-    top: 43vh;
+    left: 0%;
+    top: 50%;
   }
   .polaroid_movement16-9-2{
     z-index:2;
     z-index: 1000;
     transform: rotate(-50deg);
-    left: 0vw;
-    top:43vh;
+    left: 0%;
+    top:50%;
   }
   
   .selfie{
@@ -562,15 +564,15 @@ rgba(255, 255, 255, 1);
   /* .polaroid_selfie16-9-1:hover{
     z-index: 0;
   } */
-  .polaroid_selfie16-9-1:active{
+  /* .polaroid_selfie16-9-1:hover{
     z-index: 0;
   }
-  .polaroid_movement16-9-1:active{
+  .polaroid_movement16-9-1:hover{
     z-index: 0;
   }
-  .polaroid_prison16-9-1:active{
+  .polaroid_prison16-9-1:hover{
     z-index: 0;
-  }
+  } */
   
   .contact_info{
 /* margin-right: 5%; */
@@ -587,7 +589,7 @@ font-size: 3vh;
   }
   
   .project_info{
-    right:5vw;
+    right:20%;
     letter-spacing: 0;
     font-size: 3vh;
     line-height: 5vh;
