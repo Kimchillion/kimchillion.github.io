@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Docket View</title>
 </head>
 <!-- Convert all the "pages" to SVG instead of divs? Give it a try, if doesn't work: figure out why CSS: Right:0deg doesn't start it AT the right?-->
 
@@ -38,6 +39,13 @@
                     document.getElementById("cover").className =document.getElementById("cover").className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
                     break
             }
+            function changeImage(hide,show){
+                if(!document.getElementById(hide).className.includes('hidden')){
+                    document.getElementById(hide).className += " hidden"
+                }
+                document.getElementById(show).className=document.getElementById(show).className.replace( /(?:^|\s)hidden(?!\S)/g , '' )
+
+            }
         }
 
     </script>
@@ -49,32 +57,32 @@
     <header class="boundingbox x-spacing" id="boundingBox">
         <div class="cover" id="cover">
             
-        <div class="fake_page fake_page_contact fake_page_filler_shadow">
+        <div class="page fake_page_contact fake_page_filler_shadow">
             <div class="sticky_note_tab contact_sticky_tab ">
                 <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
                     <p class="tab_text">Contact</p> 
                 </div>
             </div>
         </div>
-        <div class="fake_page fake_page_project fake_page_filler_shadow">
+        <div class="page fake_page_project fake_page_filler_shadow">
             <div class="sticky_note_tab project_sticky_tab">
                 <div class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
                    <p class="tab_text">Project</p>
                 </div>
             </div>
         </div>
-        <div class="fake_page fake_page_about fake_page_filler_shadow">
+        <div class="page fake_page_about fake_page_filler_shadow">
             <div class="sticky_note_tab about_sticky_tab">
                 <div class="about_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
                     <p class="tab_text">About</p> 
                 </div>
             </div>
         </div>
+        <div class="page fake_page_filler1 fake_page_filler_shadow"></div>
+        <div class="page fake_page_filler2 fake_page_filler_shadow"></div>
+        <div class="page fake_page_filler3 fake_page_filler_shadow"></div>
         <div class="main_page add_shadow">
             <!-- <div class="shadow"></div> -->
-            <div class="fake_page fake_page_filler1 fake_page_filler_shadow"></div>
-            <div class="fake_page fake_page_filler2 fake_page_filler_shadow"></div>
-            <div class="fake_page fake_page_filler3 fake_page_filler_shadow"></div>
             <!-- <a href="#cover" class="home_tab home_tab_shadow"> -->
                 <div class="home_tab home_tab_shadow" onclick="changeTab('Cover')">
                     <p class="tab_text">Bare, G</p>
@@ -95,7 +103,7 @@
         <div class="closed_folder closed_folder_left add_shadow">
             <h1 class="programme-extraordinaire-garett-bare couriernew-normal font-size-large font-color-black add_shadow">Programme Extraordinaire<br><br>Garett Bare</h1>
             
-            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Cover')">
+            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align" onclick="changeTab('Cover')">
             </div>
             <!-- <a href="#cover" class="home_tab_b add_shadow"></a> -->
 
@@ -138,7 +146,7 @@
 
         </div>
         <div class="closed_folder closed_folder_right add_shadow">
-            <div class="fake_page fake_page_contact fake_page_filler_shadow">
+            <div class="page fake_page_contact fake_page_filler_shadow">
                 <div class="sticky_note_tab contact_sticky_tab">
                     <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
                         <p class="tab_text">Contact</p>  
@@ -146,7 +154,7 @@
                     <!-- <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a> -->
                 </div>
             </div>
-            <div class="fake_page fake_page_project fake_page_filler_shadow">
+            <div class="page fake_page_project fake_page_filler_shadow">
                 <div class="sticky_note_tab project_sticky_tab">
                     <div class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
                         <p class="tab_text">Project</p>  
@@ -154,7 +162,7 @@
                     <!-- <a href="#project" class="project_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Projects</a> -->
                 </div>
             </div>
-            <div class="content_page content_page_about add_shadow">
+            <div class="page content_page_about add_shadow">
                 <span class="about_info lucidahandwriting-normal font-size-medium text_align">Name: Garett M. Bare<br>Age:24<br>Location:Unknown<br><br>Known Affiliations:<br>United States Air Force, Department of Defense,<a href="https://devcodecamp.com/" target="_blank">DevCodeCamp</a><br><br>
                 Strengths:<br>Python, Javascript,html, css, bash/kornshell, linux/unix<br><br>Weaknesses:<br>Please see page labeled Known Weaknesses<br><br>Known Goals:<br>Develop proper coding practices to ensure his products meet customer requirements and industry standards </span>
                 <!-- <span class="about_info lucidahandwriting-normal font-size-medium text_align"> - Air Force Veteran with several years of experience in Python, Bash, Javascript, Kornshell and HTML.<br>Versed in rudimentary aspects of GitHub, Figma, JIRA, Confluence and Splunk
@@ -175,10 +183,10 @@
     <!-- <header class="hidden_background hidden_background_project mobile_rotation x-spacing" id="project"> -->
         <header class="open_page x-spacing hidden" id="project">
         <div class="closed_folder closed_folder_left">
-            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Cover')">
+            <div class="home_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align" onclick="changeTab('Cover')">
             </div>
             <!-- <a href="#cover" class="home_tab_b"></a> -->
-            <div class="fake_page fake_page_about_b fake_page_filler_shadow">
+            <div class="page fake_page_about_b fake_page_filler_shadow">
                 <div class="sticky_note_tab about_sticky_tab_b">
                     <div class="about_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
                         <p class="tab_text">About</p>   
@@ -186,10 +194,10 @@
                     <!-- <a href="#about" class="about_tab_b"></a> -->
                 </div>
             </div>
-            <!-- <div class="content_page content_page_project"></div> -->
+            <!-- <div class="page content_page_project"></div> -->
         </div>
         <div class="closed_folder closed_folder_right">
-            <div class="fake_page fake_page_contact fake_page_filler_shadow">
+            <div class="page fake_page_contact fake_page_filler_shadow">
                 <div class="sticky_note_tab contact_sticky_tab">
                     <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
                         <p class="tab_text">Contact</p>   
@@ -197,7 +205,7 @@
                     <!-- <a href="#contact" class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow">Contact</a> -->
                 </div>
             </div>
-            <div class="content_page content_page_project add_shadow">
+            <div class="page content_page_project add_shadow">
                 <span class="project_info no_textdec lucidahandwriting-normal font-size-medium text_align">Past Projects:<br><a href="https://github.com/gmbare/RPSLS_Javascript" class="no_textdec font-color-red" target="_blank">Rock Paper Scissors Lizard Spock</a><br><a href="https://github.com/gmbare/ATM_Javascript" class="no_textdec font-color-red" target="_blank">ATM</a><br>
                     <a href="https://github.com/gmbare/DayTripGeneratorProj" class="no_textdec font-color-red" target="_blank">Day Trip Generator</a><br><br></span>
 
@@ -215,10 +223,10 @@
     <!-- <header class="hidden_background hidden_background_contact mobile_rotation x-spacing" id="contact"> -->
         <header class="open_page x-spacing hidden" id="contact">
         <div class="closed_folder closed_folder_left">
-            <div class="home_tab_b add_shadow" onclick="changeTab('Cover')">
+            <div class="home_tab_b" onclick="changeTab('Cover')">
             </div>
             <!-- <a href="#cover" class="home_tab_b"></a> -->
-            <div class="fake_page fake_page_about_b fake_page_filler_shadow">
+            <div class="page fake_page_about_b fake_page_filler_shadow">
                 <div class="sticky_note_tab about_sticky_tab_b">
                     <div class="about_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('About')">
                         <p class="tab_text">About</p>   
@@ -227,7 +235,7 @@
                    <!-- <a href="#about" class="about_tab_b"></a> -->
                 </div>
             </div>
-            <div class="fake_page fake_page_project_b fake_page_filler_shadow">
+            <div class="page fake_page_project_b fake_page_filler_shadow">
                 <div class="sticky_note_tab project_sticky_tab_b">
                     <div class="project_tab_b no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Project')">
                         <p class="tab_text">Project</p>    
@@ -237,7 +245,7 @@
             </div>
         </div>
         <div class="closed_folder closed_folder_right">
-            <div class="content_page content_page_contact add_shadow">
+            <div class="page content_page_contact add_shadow">
                 <span class="contact_info lucidahandwriting-normal font-size-medium text_align">Email:<br>Garett.bare@(gmail|yahoo).com</span>
                 <div class="sticky_note_tab contact_sticky_tab">
                     <div class="contact_tab no_textdec lucidahandwriting-normal font-size-medium font-color-black text_align add_shadow" onclick="changeTab('Contact')">
