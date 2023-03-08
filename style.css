@@ -637,7 +637,6 @@ font-size: 3vh;
   
   .open_page{
     background-color: var(--transparent);
-    background-color: red;
     position: absolute;
     width:100%;
     height:100%;
