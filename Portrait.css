@@ -36,7 +36,7 @@ rgba(255, 255, 255, 1);
   --avoid-header-side:65rem;
   --spacing-hb-side:30rem;
 }
-@media (orientation:landscape) {
+@media (orientation:portrait) {
   
   body{
     background-color: black;
@@ -48,7 +48,7 @@ rgba(255, 255, 255, 1);
   html {
     /* height of sticky header */
     /* scroll-padding-top: 10%; */
-    font-size: 62.5%;
+    font-size: 100%;
     /* font-size:100%; */
     /* overflow: hidden; */
     position: fixed;
@@ -178,7 +178,7 @@ rgba(255, 255, 255, 1);
   .tab_text{
     /* position:relative; */
     text-align: center;
-    font-size: 1vw;
+    font-size: 50%;
     transform: rotate(90deg);
   }
   
@@ -193,7 +193,6 @@ rgba(255, 255, 255, 1);
     height:100%;
     position:absolute;
     /* top:3.5rem; */
-    width:2vw;
     /* transform: rotate(-90deg); */
   }
   
@@ -321,10 +320,16 @@ rgba(255, 255, 255, 1);
     height: 85%;
     top:1rem;
     top:3%;
+    right:15%;
     min-width: 25%;
-    width:85%;
+    width:170%;
     min-height: 30rem;
     position: absolute;
+  }
+
+  .main_portrait_page{
+    top:5%;
+    width:85%;
   }
   
   .fake_page_filler1{
@@ -332,7 +337,7 @@ rgba(255, 255, 255, 1);
     /* background-color: #2a86d5; */
     top:5%;
     left:3%;
-    transform: rotate(-10deg);
+    /* transform: rotate(-10deg); */
     
   }
   
@@ -349,39 +354,32 @@ rgba(255, 255, 255, 1);
     left:-10%
   }
   .fake_page_about{
-    right:9%;
-    top:10%;
-    /* transform: rotate(4deg); */
+    right:8%;
+    transform: rotate(4deg);
   }
   .fake_page_about_b{
-    left:0%;
-    transform: rotate(-2deg);
+    right:-75%;
   }
   
   .fake_page_contact{
+    right:15%;
     /* z-index: -1; */
-    top:5%;
-    right:9%;
-    transform: rotate(-5deg);
-  }
-  
-  .fake_page_contact_b{
-    top:0vh;
-    left:1vw;
-    transform: rotate(-5deg);
   }
   
   .fake_page_project{
-    right:8%;
-    top:3%;
-    transform: rotate(3deg);
+    right:15%;
   }
-  .fake_page_project_b{
-    /* z-index: 2; */
-    
+  .fake_page_contact.mainpage{
     right:8%;
-    top:3%;
-    transform: rotate(3deg);
+    /* z-index: -1; */
+  }
+  
+  .fake_page_project.mainpage{
+    right:8%;
+  }
+
+  .fake_page_project_b{
+    right:-80%;
   }
   
   .closed_folder{
@@ -418,23 +416,20 @@ rgba(255, 255, 255, 1);
   
   .content_page_contact{
     border: 15px var(--paper);
-    right:5%;
+    right:12%;
     border-style: solid solid solid solid;
-    transform: rotate(-5deg);
   }
   .content_page_project{
     border: 15px var(--paper);
     /* border: 25px red; */
     border-style: solid solid solid solid;
-    right:8%;
-    top:3%;
-    transform: rotate(3deg);
+    right:12%;
   }
   .content_page_about{
     /* border: 25px var(--about); */
     border: 15px var(--paper);
+    right:12%;
     border-style: solid solid solid solid;
-    transform: rotate(7deg);
   }
   .classified{
     display: none;
@@ -455,11 +450,11 @@ rgba(255, 255, 255, 1);
   
   
   .programme-extraordinaire-garett-bare {
-    left:3vw;
+    left:50%;
     letter-spacing: 0;
     line-height: 5vh;
     position: absolute;
-    font-size: 3vw;
+    font-size: 100%;
     text-align: center;
     top: 20vh;
     transform: rotate(-10deg);
@@ -469,129 +464,26 @@ rgba(255, 255, 255, 1);
   }
   
   .polaroid_main{
-    background-color: #fbfbf8;
-    height:35%;
-    width:30%;
-    position: absolute;
-    text-align: center;
+    display: none;
   }
-  
-  .polaroid_selfie1{
-    transform: rotate(-25deg);
-    top:7%;
-    left:-2%;
-    z-index: 100;
-  }
-  
-  .polaroid_text{
-    font-size: 5vh;
-    bottom:3%;
-    left:50%;
-    position:absolute;
-  }
-
-  .polaroid_text_hidden{
-    font-size: 5vh;
-    bottom:3%;
-    right:50%;
-    /* text-align: center; */
-    position:absolute;
-  }
-  
-  .polaroid_selfie16-9-1{
-    z-index: 1000;
-    transform: rotate(10deg);
-    left:47%;
-    top:1%;
-  }
-  .polaroid_selfie16-9-2{
-    z-index:1;
-    z-index: 1000;
-    transform: rotate(10deg);
-    left:47%;
-    top:1%;
-  }
-  
-  .polaroid_prison16-9-1{
-    z-index:2;
-    z-index: 1000;
-    transform: rotate(4deg);
-    left:50%;
-    top:55%;
-  }
-  .polaroid_prison16-9-2{
-    z-index:1;
-    z-index: 1000;
-    transform: rotate(4deg);
-    left:50%;
-    top:55%;
-  }
-  
-  .polaroid_movement16-9-1{
-    z-index:2;
-    z-index: 1000;
-    transform: rotate(-50deg);
-    left: 0%;
-    top: 50%;
-  }
-  .polaroid_movement16-9-2{
-    z-index:2;
-    z-index: 1000;
-    transform: rotate(-50deg);
-    left: 0%;
-    top:50%;
-  }
-  
-  .selfie{
-    position:absolute;
-    left:8%;
-    top:6.5%;
-    height:80%;
-    max-width:90%;
-    filter:grayscale(100%)
-  }
-  
-  .selfie16-9{
-    position:absolute;
-    left:6.5%;
-    top:6.5%;
-    height:75%;
-    max-width:87%;
-    filter:grayscale(100%)
-  }
-  
-  
-  /* .polaroid_selfie16-9-1:hover{
-    z-index: 0;
-  } */
-  /* .polaroid_selfie16-9-1:hover{
-    z-index: 0;
-  }
-  .polaroid_movement16-9-1:hover{
-    z-index: 0;
-  }
-  .polaroid_prison16-9-1:hover{
-    z-index: 0;
-  } */
   
   .contact_info{
 /* margin-right: 5%; */
-right:5vw;
-font-size: 3vh;
+right:15%;
+font-size: 100%;
     letter-spacing: 0;
     line-height: 5vh;
     /* position: absolute; */
     /* text-align: center; */
-    top: 10vh;
-    transform: rotate(0deg);
+    top: 25%;
     border-style: groove;
     border-color: black;
   }
   
   .project_info{
-    right:20%;
+    right:10%;
     letter-spacing: 0;
-    font-size: 3vh;
+    font-size: 100%;
     line-height: 5vh;
     position: absolute;
     text-align: center;
@@ -602,7 +494,7 @@ font-size: 3vh;
   }
   
   .about_info{
-    font-size: 1.5vw;
+    font-size: 100%;
     left:0rem;
     letter-spacing: 0;
     line-height: 3vh;
@@ -629,8 +521,7 @@ font-size: 3vh;
     /* background-color: red; */
     position: absolute;
     top:0%;
-    left:30%;
-    width: 50%;
+    width: 95%;
     height:100%;
     /* transform: rotate(-4deg); */
     overflow-y: hidden;
