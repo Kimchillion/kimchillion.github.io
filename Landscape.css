@@ -539,8 +539,9 @@
   
   .contact_info{
 /* margin-right: 5%; */
-right:5vw;
-font-size: 3vh;
+    right:20%;
+    width: 50%;
+    font-size: 3vh;
     letter-spacing: 0;
     line-height: 5vh;
     /* position: absolute; */
@@ -553,6 +554,7 @@ font-size: 3vh;
   
   .project_info{
     right:20%;
+    width: 50%;
     letter-spacing: 0;
     font-size: 3vh;
     line-height: 5vh;
