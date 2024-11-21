@@ -1,5 +1,5 @@
 @import "./Landscape.css";
-@import "./Portrait.css";
+/* @import "./Portrait.css"; */
 :root {
   --transparent:
   rgba(0, 0, 0, 0);
@@ -36,4 +36,30 @@ rgba(255, 255, 255, 1);
   --avoid-header-top:13.6%;
   --avoid-header-side:65rem;
   --spacing-hb-side:30rem;
+}
+
+.display_true{
+  display: none;
+}
+
+.unsupported{
+  display: block;
+  font-size: 1.5rem;
+  color: red;
+  text-align: center;
+  margin:20%;
+}
+
+
+@media (min-aspect-ratio: 12/9) and (max-aspect-ratio:20/9), (aspect-ratio: 4/3), (min-aspect-ratio: 12/10) and (max-aspect-ratio: 20/10){
+
+
+  .display_true{
+    display: block;
+  }
+
+  .unsupported{
+    display: none;
+  }
+
 }
